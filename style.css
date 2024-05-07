@@ -205,3 +205,72 @@ footer {
 .footer-texto{
     color: #fff;
 }
+
+/* Display none para desaparecer a nevageção e aparecer apenas em dispositivos moveis */
+.footer-navegation{
+    display: none;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ! Criando versão responsiva */
+
+@media(max-width: 768px){
+    .footer-navegation{
+        display: block;
+    }
+
+    nav{
+        display: none;
+    }
+
+    #banner{
+        background-position: 35%;
+    }
+
+    .trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer{
+        width: 100%;
+    }
+
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 100px;
+    }
+
+    .card{
+        margin-bottom: 25px;
+    }
+}
